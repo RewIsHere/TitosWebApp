@@ -1,0 +1,31 @@
+.page-title-container {
+    width: 80%;
+    height: 101px;
+    display: flex;
+    position: relative;
+    margin-top: 12%;
+    align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+  }
+  .page-title-titulo {
+    color: #ffc700;
+    font-size: 45px;
+    align-self: center;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: var(--dl-space-space-twounits);
+    font-family: Inter;
+    font-weight: 900;
+  }
+  .page-title-container1 {
+    width: 100%;
+    border: none;
+    height: 5px;
+    text-align: center;
+    background-color: #ffc700;
+  }
+  
+  
+  

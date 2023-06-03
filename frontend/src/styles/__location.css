@@ -1,0 +1,61 @@
+/*-------------------------------*/
+/* ESTILOS DE LA SECCION ORDENAR */
+/*-------------------------------*/
+
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .location h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #121212;
+    text-align: left;
+  }
+  
+  .location__img{
+    width: 340px;
+    position: absolute;
+    transform: translate(633px, -125px);
+  }
+  
+  .location__location-container{
+    background-color: var(--colorPrimario);
+    width: 1200px;
+    height: 240px;
+    transform: translateY(-133px);
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-top: 32px;
+  }
+  
+  .location__box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .location__box-search{
+    border-radius: 50px;
+    padding: 10px;
+    width: 374px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .location__box-button{
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -62px;
+  }
+  
+  
+  /*--------------------------------------*/
+  /* FIN DE ESTILOS DE LA SECCION ORDENAR */
+  /*--------------------------------------*/

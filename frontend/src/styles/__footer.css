@@ -1,0 +1,70 @@
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url("https://titos-pizza-web.rewishere.repl.co/assets/titospie.svg");
+    background-size: cover;
+    margin-top: 120px;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.footer-container__box{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+.footer-container__company{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.footer-container__box h2{
+    margin-bottom: 30px;
+    color: var(--colorFondo);
+    font-weight: 700;
+}
+
+.footer-container__box a{
+    margin-top: 10px;
+    font-family: 'Berlin Sans FB Demi', sans-serif;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.footer-container__box a:hover{
+    opacity: 0.8;
+}
+
+.footer-container__box a .fab{
+    font-size: 20px;
+}
+
+.footer-copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.footer-copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.footer-copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}

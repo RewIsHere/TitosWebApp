@@ -1,0 +1,152 @@
+
+.timeline{
+	position: relative;
+	margin: 50px auto;
+	padding: 40px 0;
+	width: 1000px;
+}
+
+.timeline:before{
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 2px;
+	height: 100%;
+	background: #ffc700;
+}
+
+.timeline ul{
+	margin: 0;
+	padding: 0;
+}
+
+.timeline ul li{
+	list-style: none;
+	position: relative;
+	width: 50%;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+/*Texto se alinea de izquierda a derecha*/
+.timeline ul li:nth-child(odd){
+	float: left;
+	text-align: right;
+	clear: both;
+}
+
+.timeline ul li:nth-child(even){
+	float: right;
+	text-align: left;
+	clear: both;
+}
+
+
+/*Estilos al contenido*/
+.content{
+	padding-bottom: 20px;
+	background-color: #ffc700;
+	text-align: center;
+	border-radius: 10%;
+  margin: 2%;
+}
+
+/*PUNTO ROJO*/
+.timeline ul li:nth-child(odd):before{
+	content: '';
+	position: absolute;
+	top: 24px;
+	right: -6px;
+	width: 10px;
+	height: 10px;
+	background: rgba(233, 33, 99, 1.0);
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+.timeline ul li:nth-child(even):before{
+	content: '';
+	position: absolute;
+	top: 24px;
+	left: -4px;
+	width: 10px;
+	height: 10px;
+	background: rgba(233, 33, 99, 1.0);
+	border-radius: 50%;
+	box-shadow: 0 0 0 3px rgba(233, 33, 99, 0.2);
+}
+
+/*Titulos de la linea del timepo*/
+.timeline ul li h3{
+	margin: 0;
+	padding: 0;
+  padding-top: 2%;
+	color: red;
+  font-family: 'Noto Sans Avestan', sans-serif;
+	
+}
+
+.timeline ul li p{
+	color: black;
+	font-family: Berlin Sans;
+}
+
+/*Imagenes del lado izquierdo*/
+.timeline ul li:nth-child(odd) img{
+	max-width: 60%;
+	margin: 0;
+	position: absolute;
+	right: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+/*Imagenes del lado derecho*/
+
+.timeline ul li:nth-child(even) img{
+	max-width: 60%;
+	margin: 0;
+	position: absolute;
+	left: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+
+/*Contenido de la linea del tiempo*/
+.timeline ul li p{
+	margin: 50% 0 0;
+	padding: 0;
+}
+
+
+.timeline ul li .time h4{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+/*ESTILOS DE LAS FECHAS*/
+.timeline ul li:nth-child(odd) .time{
+	position: absolute;
+	top: 12px;
+	right: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: red;
+	color: white;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px red;
+}
+
+.timeline ul li:nth-child(even) .time{
+	position: absolute;
+	top: 12px;
+	left: -165px;
+	margin: 0;
+	padding: 8px 16px;
+	background: red;
+	color: white;
+	border-radius: 18px;
+	box-shadow: 0 0 0 3px red;
+}

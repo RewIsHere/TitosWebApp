@@ -1,0 +1,107 @@
+/*---------------------------------*/
+/* ESTILOS DE LAS TARJETAS DEL MENU*/
+/*---------------------------------*/
+
+
+.menu-header{
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+  }
+  .menu-header__title{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+    color: var(--colorPrimario);
+  }
+
+  .test-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  
+  .menu-container__menu-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 80%;
+  }
+  
+  @media(min-width: 540px){
+    .menu-container__menu-grid{
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .menu-container__menu-grid{
+      grid-template-columns: repeat(3, 1fr); 
+    }
+  }
+  
+  .menu-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: relative;
+    width: 277px;
+    height: 353px;
+  }
+  
+  .menu-card:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .menu-card__background{
+    background-size: 90%;
+    background-position: left bottom;
+    background-color: #ffc700;
+    background-repeat: no-repeat;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(78%);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .menu-card:hover .menu-card__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .menu-container__menu-grid:hover > .menu-card:not(:hover) .menu-card__background{
+    filter: brightness(0.5) blur(20px);
+  }
+  
+  .menu-card__content{
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .menu-card__heading{
+    color: var(--text-lighter);
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    text-align: center;
+  }
+
+/*--------------------------------------*/
+/* FIN ESTILOS DE LAS TARJETAS DEL MENU */
+/*--------------------------------------*/

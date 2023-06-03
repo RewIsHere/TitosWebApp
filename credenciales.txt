@@ -1,0 +1,6 @@
+MONGODB:
+
+USER: TitosDBUser
+PASS: vRGmyHQAXHw7WDiz
+
+URI: mongodb+srv://TitosDBUser:<password>@cluster0.k2fjtmo.mongodb.net/

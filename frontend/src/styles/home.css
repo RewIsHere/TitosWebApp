@@ -1,0 +1,291 @@
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Rubik:wght@700&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/details-more.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/pin.css');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* IMPORTA LAS TIPOGRAFIAS E ICONOS */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	/* REINICIA LOS VALORES POR DEFECTO DEL NAVEGADOR */
+}
+
+:root {
+	--red: #ff3838;
+	--white: #ffffff;
+	--black: #000000;
+  --colorFondo: #121212;
+  --colorPrimario: #FFC700;
+  --colorSecundario: #FFFFFF;
+  --colorTerciario: #a50000;
+  --background-dark: #2d3548;
+  --text-light: rgba(255,255,255,0.6);
+  --text-lighter: rgba(255,255,255,0.9);
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+  --width-container: 900px;
+  /* VARIABLES GLOBALES DEL DOCUMENTO */
+}
+
+html, body {
+  display: unset !important;
+  height: 100%;
+  width: 100%;
+  background-color: var(--colorFondo) !important;
+  /*background-image: url("/assets/Fondo.png");*/
+  background-position-x: center;
+  background-size: contain;
+  color:#FFFFFF !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+@font-face {
+  font-family: "Friday Beach";
+  src: url("/assets/Friday.ttf");
+
+  /*Agrega una fuente personalizada de un directorio local*/
+}
+
+#root{
+  margin: 0px !important;
+  max-width: 100%;
+  padding: unset !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #FFFFFF !important;
+}
+
+#backtotop {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#backtotop::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#backtotop:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#backtotop:active {
+  background-color: #555;
+}
+#backtotop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*-------------------------------*/
+/* ESTILOS DE LA PAGINA PRINCIPAL*/
+/*-------------------------------*/
+.slogan-container{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 100px;
+}
+
+.header{
+  background-image: url("https://titos-pizza-web.rewishere.repl.co/assets/Decorator2.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.home-title{
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--colorPrimario);
+  margin-bottom: 50px;
+}
+.header__subheader{
+  margin-top: 168px;
+}
+.header__img{
+  width: 528px;
+}
+.header__slogan {
+  font-family: 'Pacifico', cursive;
+  width: 30%;
+  margin-right: 338px;
+  color: #fff;
+}
+.header__button {
+  cursor: pointer;
+  font-weight: 700;
+  font-family: 'Berlin Sans FB Demi', sans-serif !important;
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 23px !important;
+  background: var(--colorPrimario);
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 20px !important;
+  width: 95%;
+  height: 139px;
+  justify-content: flex-end;
+}
+.header__button:hover {
+  background: #b5941c;
+  color: var(--white);
+}
+.header__button:active {
+  transform: scale(0.95);
+}
+.header__button{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.header__button-text{
+  width: 60%;
+}
+
+#combos{
+  background-image: url(/assets/Combo.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 45%;
+}
+
+#tamaños{
+  background-image: url(/assets/Tamaños.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 55%;
+}
+
+#extras{
+  background-image: url(/assets/Extras.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 45%;
+}
+
+/*--------------------------------------*/
+/* FIN DE ESTILOS DE LA PAGINA PRINCIPAL*/
+/*--------------------------------------*/
+
+
+
+
+
+/*-----------------*/
+/*-----------------*/
+/*-----------------*/
+
+/*ESTILOS VERSION MOVIL*/
+@media screen and (max-width: 600px) {
+
+/*NAVEGACION MOVIL*/
+  .navegacion {
+		padding: 10px;
+	}
+	.navegacion .navegacion__menu {
+		display: none;
+	}
+	.navegacion .navegacion__icon {
+		display: block;
+		position: absolute;
+		top: 13px;
+		right: 13px;
+	}
+	.navegacion.show {
+		background: var(--black);
+	}
+	.navegacion.show .navegacion__menu {
+		display: block;
+		width: 100%;
+	}
+	.navegacion.show .navegacion__menu a {
+		width: 100%;
+	}
+
+  /*CARRUSEL*/
+  .slide-container{
+    height: 70%;
+  }
+
+  /*ORDEN*/
+  .order__order-container{
+    transform: translateY(0);
+  }
+
+  .order__img{
+    display: none;
+}
+  
+  /*CABECERA*/
+
+  .header{
+    background-size: 40%;
+  }
+  
+  .header__img{
+    width: 80%;
+  }
+  button{
+    width: 100%;
+  }
+
+  .header__button-text {
+    width: 142px;
+  }
+
+  #combos{
+    background-position: left;
+    background-size: 124px;
+  }
+  #tamaños{
+    background-position: left;
+    background-size: 155px;
+  }
+  #extras{
+    background-position: left;
+    background-size: 160px;
+  }
+  /*DIDI*/
+  .didi-container__bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .didi-info{
+  background: #a50000;
+  width: 85%;
+  height: 294px;
+  margin-right: 0;
+  transform: translateY(274px);
+  float: none;
+  text-align: center;
+}
+}

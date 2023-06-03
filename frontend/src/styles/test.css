@@ -1,0 +1,59 @@
+
+.main-content{
+    background-color: #101010;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    float: right;
+    flex-direction: column;
+    align-items: center;
+}
+.react-tabs{
+    width: 80%;
+}
+.admin-header{
+    width: 100%;
+    height: 100px;
+}
+.pizza-admin-grid{
+    display: grid;
+    grid-row-gap: 40px;
+    grid-column-gap: 70px;
+    grid-template-columns: repeat(3, 33.33%);
+}
+
+.admin-menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    list-style: none;
+  }
+  
+  .admin-menu__tab {
+    width: 125px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .react-tabs__tab--selected .admin-menu__text{
+    /* Estilos para el span dentro del tab seleccionado */
+    color: #FFC700;
+  }
+
+  .admin-menu__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .admin-menu_btnAdd{
+    width: 50px;
+    background-color: #0E35FF;
+    border-radius: 5px;
+  }

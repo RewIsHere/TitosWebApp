@@ -1,0 +1,52 @@
+.didi-header{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+  }
+  .didi-header h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    color: var(--colorPrimario);
+  }
+  
+  
+  .didi-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .didi-container__bg {
+    background-image: url("https://titos-pizza-web.rewishere.repl.co/assets/Didi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 710px;
+    width: 85%;
+  }
+  
+  .didi-info{
+    background: #a50000;
+    width: 400px;
+    height: 294px;
+    float: right;
+    margin-right: 15%;
+    transform: translateY(474px);
+    text-align: center;
+  }
+  
+  .didi-info__title {
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  
+  .didi-info__text{
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    color: #fff;
+  
+  }
+  
+  .didi-info__playstore{
+    width: 200px;
+  }

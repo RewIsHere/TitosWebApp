@@ -1,0 +1,74 @@
+.pizza-card-container {
+    width: 283px;
+    height: 249px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .pizza-card-wrapper {
+    width: 267px;
+    height: 243px;
+    display: flex;
+    align-items: center;
+    border-color: #ffc700;
+    border-style: solid;
+    border-width: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .pizza-card-nombre {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-color: #ffc700;
+    border-width: 5px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffc700;
+    font-family: 'Inter';
+  }
+  .pizza-card-text {
+    color: #000000;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: 'Inter';
+  }
+  .pizza-card-contenido {
+    width: 267px;
+    height: 243px;
+    display: flex;
+    align-items: center;
+    border-color: #ffc700;
+    border-style: solid;
+    border-width: 5px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .pizza-card-text1 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .pizza-card-image {
+    width: 238px;
+    height: 133px;
+    object-fit: cover;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

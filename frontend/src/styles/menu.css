@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.sizes-section{
+  display: flex;
+  justify-content: center;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+}
+.menu-pizza-grid {
+  width: 80%;
+  display: grid;
+  align-self: center;
+  grid-row-gap: 20px;
+  grid-column-gap: var(--dl-space-space-unit);
+  grid-template-columns: repeat(4, 1fr);
+}
+.menu-tamanos {
+  color: rgb(255, 199, 0);
+  font-size: 45px;
+  align-self: center;
+  font-style: normal;
+  font-weight: 900;
+  margin-bottom: var(--dl-space-space-twounits);
+  font-family: Inter;
+}
+.menu-sizes-grid {
+  display: grid;
+  align-self: center;
+  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-tabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.menu-tabs-tab {
+  width: 250px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc700;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-tabs-tab:hover {
+  background-color: #977c10;
+}
+
+.menu-tabs-tab:focus {
+  outline: none;
+}
+
+.menu-tabs-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.menu-tabs-root-class-name {
+  align-self: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+ul {
+  padding-left: unset !important;
+}
+
+.menu-section{
+  margin-bottom: 10%;
+  margin-top: 4%;
+}
+.menu-section h3{
+  text-align: center;
+  margin-bottom:2%;
+  color: #ffc700;
+  font-family: "Friday Beach", serif;
+}
+.menu-section hr{
+  color:#ffc700;
+  align-content: center;
+  margin-bottom: 2%;
+}
+.menu-section  h4{
+  text-align: center;
+  margin-bottom: 5;
+  color:#ffc700;
+  display: grid;
+  margin: 0.5% 0% 0% 0%;
+  font-family: 'Berlin Sans FB Demi', sans-serif !important;
+}
+
+.titulo4{
+  margin-bottom: 2%;
+}
+.menu-section  h5{
+  text-align: center;
+  margin: 1%;
+  font-family: 'Berlin Sans FB Demi', sans-serif !important;
+}
+
+table{
+  margin: auto;
+  width: 70%;
+  font-family: 'Berlin Sans FB Demi', sans-serif !important;
+}
+
+td{
+  border-spacing: 10%;
+}
+
+.menu-section__menu-grid{
+  width: 25%;
+}
+
+.conteiner-card{
+  width: 100%;
+  display: flex;
+  max-width: 100%;
+  
+}
