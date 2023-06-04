@@ -8,6 +8,8 @@ const connectDb = require("./db");
 const errorHandler = require("./middleware/errorHandler");
 const pizzaRoutes = require("./routes/pizzaRoutes");
 const comboRoutes = require("./routes/comboRoutes");
+const extraRoutes = require("./routes/extraRoutes");
+const sizeRoutes = require("./routes/sizeRoutes");
 
 const app = express();
 
@@ -25,6 +27,8 @@ app.use(
 // category routes
 app.use("/api/v1", pizzaRoutes);
 app.use("/api/v1", comboRoutes);
+app.use("/api/v1", extraRoutes);
+app.use("/api/v1", sizeRoutes);
 
 // Database connection
 connectDb();

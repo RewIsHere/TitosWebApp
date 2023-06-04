@@ -99,7 +99,7 @@ const extraController = {
       return next(error);
     }
   },
-  async updateExtra(req, res, next) {
+  async updateExtras(req, res, next) {
     try {
       const { nombre, precio } = req.body;
 
