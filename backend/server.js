@@ -10,6 +10,7 @@ const pizzaRoutes = require("./routes/pizzaRoutes");
 const comboRoutes = require("./routes/comboRoutes");
 const extraRoutes = require("./routes/extraRoutes");
 const sizeRoutes = require("./routes/sizeRoutes");
+const promoRoutes = require("./routes/promoRoutes");
 
 const app = express();
 
@@ -29,6 +30,7 @@ app.use("/api/v1", pizzaRoutes);
 app.use("/api/v1", comboRoutes);
 app.use("/api/v1", extraRoutes);
 app.use("/api/v1", sizeRoutes);
+app.use("/api/v1", promoRoutes);
 
 // Database connection
 connectDb();

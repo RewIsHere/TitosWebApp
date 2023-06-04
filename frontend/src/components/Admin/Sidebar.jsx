@@ -34,7 +34,7 @@ const Sidebar = () => {
         </li>
         <li className="sidebar__item">
           <NavLink
-            to="/admin/test"
+            to="/admin/menu"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
             <BiBookContent className="sidebar__icon" />
@@ -42,14 +42,22 @@ const Sidebar = () => {
           </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <BiPurchaseTagAlt className="sidebar__icon" />
-          PROMOS
+          <NavLink
+            to="/admin/promos"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <BiPurchaseTagAlt className="sidebar__icon" />
+            PROMOS
+          </NavLink>
         </li>
         <li className="sidebar__item">
-          {" "}
-          <BiBasket className="sidebar__icon" />
-          PEDIDOS
+          <NavLink
+            to="/admin/pedidos"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            <BiBasket className="sidebar__icon" />
+            PEDIDOS
+          </NavLink>
         </li>
       </ul>
     </div>

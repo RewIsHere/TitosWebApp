@@ -6,6 +6,7 @@ import AdminTitle from "./AdminTitle";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { TiPlus } from "react-icons/ti";
 import { RiMenu4Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Test = () => {
   return (
@@ -30,12 +31,56 @@ const Test = () => {
             <Tab className="admin-menu__tab">
               <span className="admin-menu__text">Tamaños</span>
             </Tab>
-            <div className="admin-header">
-              <a className="admin-menu_btnAdd">
-                <TiPlus />
-              </a>
-            </div>
           </TabList>
+          <TabPanel>
+            <div className="admin-header">
+              <Link to="addpizza" className="admin-menu_btnAdd">
+                <TiPlus />
+              </Link>
+            </div>{" "}
+            <div className="pizza-admin-grid">
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+            </div>
+          </TabPanel>
           <TabPanel>
             {" "}
             <div className="pizza-admin-grid">
@@ -81,48 +126,6 @@ const Test = () => {
               />
             </div>
           </TabPanel>
-          <TabPanel>          <div className="pizza-admin-grid">
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-              <Pizza
-                pizzaTitulo="Peperoni"
-                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
-              />
-            </div></TabPanel>
           <TabPanel></TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
