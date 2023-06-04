@@ -49,16 +49,16 @@ class APIfeatures {
   }
 }
 
-const comboController = {
-  async getCombos(req, res, next) {
+const extraController = {
+  async getExtras(req, res, next) {
     try {
-      const features = new APIfeatures(Combos.find(), req.query)
+      const features = new APIfeatures(Extras.find(), req.query)
         .filtering()
         .sorting();
 
-      const combos = await features.query;
+      const extras = await features.query;
 
-      if (combos.length < 0) {
+      if (extras.length < 0) {
         return res.status(404).json({
           message: "No se encontro ningun combo.",
         });
@@ -66,84 +66,62 @@ const comboController = {
 
       res.json({
         status: "success",
-        result: combos.length,
-        combos: combos,
+        result: extras.length,
+        extras: extras,
       });
     } catch (err) {
       return next(err);
     }
   },
-  async createCombo(req, res, next) {
+  async createExtra(req, res, next) {
     console.log(req.body);
     try {
-      const { nombre, descripcion, imagen, precio, pizzas, extras } = req.body;
+      const { nombre, precio } = req.body;
 
-      if (!imagen) {
-        return next(
-          CustomErrorHandler.badRequest("Necesitas subir una imagen.")
-        );
-      }
-      if (!descripcion || !nombre) {
+      if (!nombre || !precio) {
         return res.status(400).json({
-          message: "Tienes que proporcionar un nombre y una descripcion.",
-        });
-      }
-      if (!pizzas || !extras) {
-        return res.status(400).json({
-          message:
-            "Tienes que proporcionar una o varias pizzas y una o varios extras.",
+          message: "Tienes que proporcionar un nombre y un precio.",
         });
       }
 
-      const combo = new Combos({
+      const extra = new Extras({
         nombre: nombre.toLowerCase(),
-        descripcion,
-        imagen,
         precio,
-        pizzas,
-        extras,
       });
 
-      const savedCombo = await combo.save();
+      const savedExtra = await extra.save();
 
       res.status(201).json({
-        message: `El combo se ha agregado correctamente`,
-        combo: savedCombo,
+        message: `El extra se ha agregado correctamente`,
+        extra: savedExtra,
       });
     } catch (error) {
       return next(error);
     }
   },
-  async updateCombos(req, res, next) {
+  async updateExtra(req, res, next) {
     try {
-      const { nombre, descripcion, imagen } = req.body;
-      if (!imagen) {
-        return next(CustomErrorHandler.badRequest("No image upload"));
-      }
+      const { nombre, precio } = req.body;
 
-      await Combos.findByIdAndUpdate(
+      await Extras.findByIdAndUpdate(
         { _id: req.params.id },
         {
           nombre,
-          descripcion,
-          imagen,
           precio,
-          pizzas,
-          imagen,
         },
         { new: true }
       );
 
-      res.status(200).json({ message: "Combo Actualizado" });
+      res.status(200).json({ message: "Extra Actualizado" });
     } catch (err) {
       return next(err);
     }
   },
-  async deleteCombos(req, res, next) {
+  async deleteExtras(req, res, next) {
     try {
       try {
-        await Combos.findByIdAndDelete(req.params.id);
-        res.status(200).json({ message: "Combo eliminado" });
+        await Extras.findByIdAndDelete(req.params.id);
+        res.status(200).json({ message: "Extra eliminado" });
       } catch (err) {
         return next(err);
       }
@@ -151,28 +129,28 @@ const comboController = {
       return next(err);
     }
   },
-  async getByIdCombo(req, res, next) {
-    let combo;
+  async getByIdExtra(req, res, next) {
+    let extra;
     try {
-      combo = await Combos.findOne({ _id: req.params.id }).select(
+      extra = await Extras.findOne({ _id: req.params.id }).select(
         "-updatedAt -__v"
       );
     } catch (err) {
       return next(err);
     }
 
-    res.status(200).json(pizza);
+    res.status(200).json(extra);
   },
-  async getAllCombos(req, res, next) {
-    let combos;
+  async getAllExtras(req, res, next) {
+    let extras;
     try {
-      combos = await Combos.find().select("-updatedAt -__v").sort({ _id: -1 });
+      extras = await Extras.find().select("-updatedAt -__v").sort({ _id: -1 });
     } catch (err) {
       return next(err);
     }
 
-    res.status(200).json(pizzas);
+    res.status(200).json(extras);
   },
 };
 
-module.exports = comboController;
+module.exports = extraController;

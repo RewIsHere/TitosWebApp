@@ -81,7 +81,48 @@ const Test = () => {
               />
             </div>
           </TabPanel>
-          <TabPanel></TabPanel>
+          <TabPanel>          <div className="pizza-admin-grid">
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+              <Pizza
+                pizzaTitulo="Peperoni"
+                pizzaImg="https://titos-pizza-web.rewishere.repl.co/assets/Titos%20especial.png"
+              />
+            </div></TabPanel>
           <TabPanel></TabPanel>
           <TabPanel></TabPanel>
         </Tabs>
