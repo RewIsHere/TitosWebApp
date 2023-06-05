@@ -29,20 +29,21 @@ const Slider = () => {
       className="bg-dark"
       style={{ width: "100%", height: "100vh" }}
     >
-      {promos.map((promo) => (
-        <Carousel.Item
-          key={promo.id}
-          style={{ width: "100%", height: "100vh" }}
-        >
-          <img
-            src={promo.image}
-            alt="Promo"
-            className="d-block w-100 h-100"
-            style={{ objectFit: "cover" }}
-          />
-          <div className="overlay"></div>
-        </Carousel.Item>
-      ))}
+      {promos &&
+        promos.map((promo) => (
+          <Carousel.Item
+            key={promo._id}
+            style={{ width: "100%", height: "100vh" }}
+          >
+            <img
+              src={promo.imagen}
+              alt="Promo"
+              className="d-block w-100 h-100"
+              style={{ objectFit: "cover" }}
+            />
+            <div className="overlay"></div>
+          </Carousel.Item>
+        ))}
     </Carousel>
   );
 };

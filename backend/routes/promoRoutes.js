@@ -5,8 +5,6 @@ const promoController = require("../controllers/promoController");
 
 const router = express.Router();
 
-router.get("/promos", promoController.getPromos);
-
 router
   .route("/promos")
   .get(promoController.getAllPromos)

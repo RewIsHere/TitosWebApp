@@ -1,0 +1,63 @@
+.promo-container {
+  background: #ffc700;
+  width: 1000px;
+  height: 247px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.promo-titulo {
+  text-align: left;
+  padding-left: 5%;
+  color: #101010;
+}
+
+.promo-body {
+  display: flex;
+}
+
+.promo-body__left {
+  flex: 1;
+}
+
+.promo-body__right {
+  flex: 1;
+}
+
+button.promo-body__btnEdit {
+  background: #0e35ff;
+  border: none;
+  border-radius: 27px;
+  width: 140px;
+  height: 44px;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 10px;
+}
+
+button.promo-body__btnDel {
+  background: #c11111;
+  border: none;
+  border-radius: 27px;
+  width: 140px;
+  height: 44px;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 18px;
+  margin: 10px;
+}
+.promo-body__btnIcon {
+  width: 25px;
+  height: 25px;
+  color: #ffffff;
+  margin-right: 15px;
+  stroke-width: 4px;
+}
+
+img.promo__img {
+  height: 170px;
+  border-radius: 30px;
+}

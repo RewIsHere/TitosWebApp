@@ -5,7 +5,7 @@ import Menu from "./pages/Menu";
 import Nosotros from "./pages/Nosotros";
 import Sucursales from "./pages/Sucursales";
 import Test from "./components/Admin/Test";
-import Test2 from "./components/Admin/Test2";
+import Promos from "./components/Admin/Promos";
 import PizzaAdd from "./components/Admin/PizzaAdd";
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
         {/*<Route exact path="/admin/dashboard/editextra/:extraId" element={<PizzaAdd />} />*/}
         {/*<Route exact path="/admin/dashboard/addsize" element={<PizzaAdd />} />*/}
         {/*<Route exact path="/admin/dashboard/editsize/:sizeId" element={<PizzaAdd />} />*/}
-        <Route exact path="/admin/promos" element={<Test2 />} />
+        <Route exact path="/admin/promos" element={<Promos />} />
         {/*<Route exact path="/admin/promos/add" element={<Test2 />} />*/}
         {/*<Route exact path="/admin/promos/edit/:promoId" element={<Test2 />} />*/}
         {/*<Route exact path="/admin/pedidos" element={<Test2 />} />*/}

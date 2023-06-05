@@ -9,8 +9,10 @@ export const listPromos = () => async (dispatch) => {
   try {
     dispatch({ type: PROMOS_LIST_REQUEST });
 
-    //    const { data } = await axios.get(`localhost:5000/api/v1/pizzas`)
-    const data = [
+    const { data } = await axios.get(
+      `https://pzgkuy-5000.csb.app/api/v1/promos`
+    );
+    /* const data = [
       {
         id: 1,
         image:
@@ -21,12 +23,13 @@ export const listPromos = () => async (dispatch) => {
         image:
           "https://titos-pizza-web.rewishere.repl.co/assets/bg_slider2.jpg",
       },
-    ];
+    ];*/
 
     dispatch({
       type: PROMOS_LIST_SUCCESS,
       payload: data,
     });
+    console.log("LISTO");
   } catch (error) {
     dispatch({
       type: PROMOS_LIST_FAIL,
@@ -35,5 +38,6 @@ export const listPromos = () => async (dispatch) => {
           ? error.response.data.message
           : error.message,
     });
+    console.log("ERROR");
   }
 };
