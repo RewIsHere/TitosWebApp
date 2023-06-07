@@ -1,11 +1,13 @@
 import React from "react";
-import "../../styles/test.css";
+import "../../styles/promos.css";
 import Sidebar from "../../components/Admin/Sidebar";
 import AdminTitle from "../../components/Admin/AdminTitle";
 import PromoCard from "../../components/Admin/PromoCard";
 import { RiMenu4Line } from "react-icons/ri";
+import { TiPlus } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
-const Test = () => {
+const Promos = () => {
   return (
     <>
       <Sidebar />
@@ -14,25 +16,13 @@ const Test = () => {
           adminIcono={<RiMenu4Line className="admin-title__icon" />}
           adminTitulo="Promos"
         />
+        <div className="admin-btnContainer">
+          <Link to="add" className="admin-menu_btnAdd">
+            <TiPlus className="admin-menu_icon" />
+          </Link>
+        </div>
+
         <div className="promos-list">
-          {/*    <div style={{ display: "flex", flexDirection: "column" }}>
-            <div
-              style={{
-                backgroundColor: "gray",
-                padding: "10px",
-                textAlign: "center",
-              }}
-            >
-              <div style={{ flex: "1 0 auto" }}>
-                <h2>Título</h2>
-              </div>
-            </div>
-            <div style={{ display: "flex" }}>
-              <div style={{ flex: 1, backgroundColor: "red" }}>Columna 1</div>
-              <div style={{ flex: 1, backgroundColor: "blue" }}>Columna 2</div>
-            </div>
-          </div>
-*/}
           <PromoCard />
           <PromoCard />
           <PromoCard />
@@ -42,4 +32,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Promos;

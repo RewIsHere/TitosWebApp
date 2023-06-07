@@ -7,6 +7,7 @@ import Sucursales from "./pages/Sucursales";
 import MenuAdmin from "./pages/Admin/Menu";
 import Promos from "./pages/Admin/Promos";
 import PizzaAdd from "./components/Admin/PizzaAdd";
+import PromoAdd from "./components/Admin/PromoAdd";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,7 +40,7 @@ function App() {
         {/*<Route exact path="/admin/dashboard/addsize" element={<PizzaAdd />} />*/}
         {/*<Route exact path="/admin/dashboard/editsize/:sizeId" element={<PizzaAdd />} />*/}
         <Route exact path="/admin/promos" element={<Promos />} />
-        {/*<Route exact path="/admin/promos/add" element={<Test2 />} />*/}
+        <Route exact path="/admin/promos/add" element={<PromoAdd />} />
         {/*<Route exact path="/admin/promos/edit/:promoId" element={<Test2 />} />*/}
         {/*<Route exact path="/admin/pedidos" element={<Test2 />} />*/}
         {/*<Route exact path="/admin/pedidos/:pedidoId" element={<Test2 />} />*/}

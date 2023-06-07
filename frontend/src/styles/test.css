@@ -64,3 +64,23 @@
   background-color: #0e35ff;
   border-radius: 5px;
 }
+.admin-header {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.backBtn{
+  color: #ffffff;
+}
+
+.backbtn__icon{
+  width: 55px;
+  height: 55px;
+}
+
+.backbtn__icon:hover{
+  color: #d1b5b5;
+  width: 55px;
+  height: 55px;
+}

@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/__admintitle.css";
 import PropTypes from "prop-types";
-import { RiMenu4Line } from "react-icons/ri";
 
 const AdminTitle = ({ adminTitulo, adminIcono }) => {
   return (
@@ -16,7 +15,7 @@ const AdminTitle = ({ adminTitulo, adminIcono }) => {
 
 AdminTitle.defaultProps = {
   adminTitulo: "Heading",
-  adminIcono: <RiMenu4Line />,
+  adminIcono: "",
 };
 
 AdminTitle.propTypes = {
