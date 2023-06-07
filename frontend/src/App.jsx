@@ -4,8 +4,8 @@ import Home from "./pages/Home";
 import Menu from "./pages/Menu";
 import Nosotros from "./pages/Nosotros";
 import Sucursales from "./pages/Sucursales";
-import Test from "./components/Admin/Test";
-import Promos from "./components/Admin/Promos";
+import MenuAdmin from "./pages/Admin/Menu";
+import Promos from "./pages/Admin/Promos";
 import PizzaAdd from "./components/Admin/PizzaAdd";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
 
         <Route exact path="/admin" element={<Navigate to="/admin/menu" />} />
         {/*<Route exact path="/admin/dashboard" element={<PizzaAdd />} />*/}
-        <Route exact path="/admin/menu" element={<Test />} />
+        <Route exact path="/admin/menu" element={<MenuAdmin />} />
         <Route exact path="/admin/menu/addpizza" element={<PizzaAdd />} />
         {/*<Route exact path="/admin/dashboard/editpizza/:pizzaId" element={<PizzaAdd />} />*/}
         {/*<Route exact path="/admin/dashboard/addcombo" element={<PizzaAdd />} />*/}

@@ -1,8 +1,8 @@
 import React from "react";
 import "../../styles/test.css";
-import Sidebar from "./Sidebar";
-import AdminTitle from "./AdminTitle";
-import PromoCard from "./PromoCard";
+import Sidebar from "../../components/Admin/Sidebar";
+import AdminTitle from "../../components/Admin/AdminTitle";
+import PromoCard from "../../components/Admin/PromoCard";
 import { RiMenu4Line } from "react-icons/ri";
 
 const Test = () => {

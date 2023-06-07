@@ -11,6 +11,7 @@ const comboRoutes = require("./routes/comboRoutes");
 const extraRoutes = require("./routes/extraRoutes");
 const sizeRoutes = require("./routes/sizeRoutes");
 const promoRoutes = require("./routes/promoRoutes");
+const uploadRoutes = require("./routes/uploadRoutes");
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use("/api/v1", comboRoutes);
 app.use("/api/v1", extraRoutes);
 app.use("/api/v1", sizeRoutes);
 app.use("/api/v1", promoRoutes);
+app.use("/api/v1", uploadRoutes);
 
 // Database connection
 connectDb();
