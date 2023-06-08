@@ -19,7 +19,7 @@ export const createPromo = (promo, navigate) => async (dispatch) => {
     });
 
     const { data } = await axios.post(
-      `https://pzgkuy-5000.csb.app/api/v1/promos`,
+      `https://5000-rewishere-titoswebapp-zubzv16al30.ws-us99.gitpod.io/api/v1/promos`,
       promo
     );
 
@@ -76,7 +76,7 @@ export const deletePromo = (id) => async (dispatch) => {
     });
 
     const { data } = await axios.delete(
-      `https://pzgkuy-5000.csb.app/api/v1/promos/${id}`
+      `https://5000-rewishere-titoswebapp-zubzv16al30.ws-us99.gitpod.io/api/v1/promos/${id}`
     );
     dispatch({
       type: PROMOS_DELETE_SUCCESS,
@@ -98,7 +98,7 @@ export const listPromos = () => async (dispatch) => {
     dispatch({ type: PROMOS_LIST_REQUEST });
 
     const { data } = await axios.get(
-      `https://pzgkuy-5000.csb.app/api/v1/promos`
+      `https://rewishere-congenial-meme-jgjj4xvjpp735wv5-5000.preview.app.github.dev/api/v1/promos`
     );
     /* const data = [
       {

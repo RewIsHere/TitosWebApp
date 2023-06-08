@@ -18,7 +18,10 @@ const app = express();
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+  origin: 'https://5173-rewishere-titoswebapp-zubzv16al30.ws-us99.gitpod.io'
+}));
+
 app.use(cookieParser());
 app.use(
   fileUpload({
