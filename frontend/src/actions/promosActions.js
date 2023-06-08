@@ -98,7 +98,7 @@ export const listPromos = () => async (dispatch) => {
     dispatch({ type: PROMOS_LIST_REQUEST });
 
     const { data } = await axios.get(
-      `https://rewishere-congenial-meme-jgjj4xvjpp735wv5-5000.preview.app.github.dev/api/v1/promos`
+      `https://rewishere-miniature-zebra-x4559j7rw5636gvq-5000.preview.app.github.dev/api/v1/promos`
     );
     /* const data = [
       {

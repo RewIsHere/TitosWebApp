@@ -15,13 +15,16 @@
   align-items: center;
   gap: 30px;
 }
+
 .react-tabs {
   width: 80%;
 }
+
 .admin-header {
   width: 100%;
   height: 100px;
 }
+
 .pizza-admin-grid {
   display: grid;
   grid-row-gap: 40px;
@@ -78,6 +81,7 @@
 .admin-menu_btnAdd:hover {
   background-color: #0721a1;
 }
+
 .admin-header {
   display: flex;
   align-items: center;
@@ -119,10 +123,23 @@
   padding: 50px;
 }
 
+.form-container__body {
+  display: flex;
+}
+
+.form-container__left {
+  flex: 1;
+}
+
+.form-container__right {
+  flex: 1;
+}
+
 .input-container {
   display: flex;
   flex-direction: column;
 }
+
 .input-container__label {
   margin-bottom: 30px;
   font-family: "Ubuntu";
@@ -130,6 +147,7 @@
   font-size: 20px;
   margin-left: 10px;
 }
+
 .input-container__input {
   width: 500px;
   height: 50px;
@@ -140,6 +158,72 @@
   padding-left: 20px;
 }
 
+.input-container__file {
+  display: grid;
+  margin-top: 20px;
+  place-items: center;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  background: #fbfbff;
+  border-radius: 20px;
+}
+
+#file_up {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 5px;
+}
+
+#file_up::before{
+  content: url("https://raw.githubusercontent.com/mdhossin/mern-quickshop-website/827735457dc2c6ebd5a5feb39f11656abff4e092/admin/server/client/src/assets/images/upload.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #2c2828;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea#desc_promo {
+  height: 171px;
+  resize: none;
+}
+
 .input-container__input:focus-visible {
-  border: 3px solid #2c2828;
+  border: 3px solid #1c1c1c;
+  outline: none;
+}
+
+.form-container__footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+
+.form-container__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #0E35FF;
+  color: #ffffff;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.form-container__btn:hover{
+  background-color: #0721a1;
 }
